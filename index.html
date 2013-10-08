@@ -1,65 +1,252 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>BookCorp-Project management application</title>
-	<link rel="stylesheet" href="stylesheets/screen.css"/>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BookCorp-Product Page">
+    <meta name="author" content="TobiaszKukawka">
+    <link rel="shortcut icon" href="../../bootstrap/docs-assets/ico/favicon.png">
 
-<body>
+    <title>BookCorp</title>
 
-	<div class="root">
-	<p class="notice">
-		Notice: this page and product is not comercial. They were created in order to practice and learn how to create web-sites and applications. This is student project.
-	</p>
+    <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
 
-	<h1>BookCorp</h1>
+    <!-- Custom styles for this template -->
+    <link href="stylesheets/BookCorp.css" rel="stylesheet">
 
-	<h2>This is application which enables to organize:</h2>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../docs-assets/js/html5shiv.js"></script>
+      <script src="../../docs-assets/js/respond.min.js"></script>
+    <![endif]-->
+ </head>
 
-	<ul>
-		<li>work</li>
-		<li>flow of information </li>
-		<li>plans </li>
-		<li>files among other participants via internet</li>
-	</ul>
+  <body data-twttr-rendered="true">
 
-	<h2>Check which functionalities will be in use:</h2>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">BookCorp</a>
+        </div>
+     <!--  <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact us!</a></li>
+          </ul>
+        </div>nav-collapse -->
+      </div>
+    </div>
+    <div id="content" class="header">
+        <div class="container">
 
-	<h3>Overview</h3>
-	<p>This is a wall where everything appears if it was added. The visibility for particular users is the same as decided during creating the item by creator. Each category has its color and each "Activity" has its own sign. Admins can also change the project-status there.</p>
+          <div class="intro">
+            <small class="text-danger">Notice: This is not a real product. This page is created for the studies purposes</small>
+            <h1>Manage your projects with us!</h1>
+            <p class="lead">This application enhances your work,flow of informationplans and files among other participants via internet. If you want to improve your efficiency and organisation of time, join us!</p>
+
+            <p class="evaluation"> Perform your projects in groups, participate, help and ask for it. Divert the tasks, small points and brainstorms. Everything is possible if everone taka part.</p>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+     <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-4 hidden-xs">
+          <div class="sidebar" role="complementary">
+            <ul class="nav list">
+              <li class="">
+                <a href="#overview">Overview</a>
+              </li>
+              <li class="">
+                <a href="#messages">Messages</a>
+              </li>
+              <li class="">
+                <a href="#to-dos">To-dos</a>
+              </li>
+              <li class="">
+                <a href="#writeboard">Writeboards</a>
+              </li>
+              <li class="">
+                <a href="#projects">Projects</a>
+              </li>
+              
+              <li class="">
+                <a href="#users">Users</a>
+              </li>
+              <li class="">
+                <a href="#files">Files</a>
+              </li>
+              
+              <li class="">
+                <a href="#search">Search</a>
+              </li>
+
+              <li class="">
+                <a href="#author">About Author</a>
+              </li>
+
+            </ul>
+          </div>
+
+          
+          <div class="contact-form">
+              <p class="contact-intro">Contact us via this form!</p>  
+              <form role="form">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                      <label for="contact-title">Title</label>
+
+                      <input type="text" class="form-control" id="contact-title" placeholder="Enter Title">
+
+                  </div>
 
 
-	<h3>User</h3>
+                  <div class="form-group">
+                      <label for="contact-nickname">Name</label>
+                      <input type="text" class="form-control" id="contact-name" placeholder="Enter Your Name">
+                  </div>
+                  <div class="form-group">
+                      <label for="contact-body">Body</label>
+                      <textarea type="text" class="form-control" id="contact-body" placeholder="Enter Body od contact" rows="3"></textarea>
+                  </div>
+                   <button type="send" class="btn btn-primary">Send</button>
+                </div>
+               
 
-	<dl>
-		<dt>Admin</dt>
-		<dd>can add/remove users and whole content</dd>
+              </form>
+          </div>
+        </div>
 
-		<dt>Programmer</dt>
-		<dd>can add new content</dd>
+        <div class="col-xs-12 col-sm-6 col-md-8" role="main">
+          <div class="funcs">
+            <div class="page-header" id="overview">
+              <h1 > Overview</h1>
+            </div>
 
-		<dt>Guest</dt>
-		<dd>if accepted by user, can watch what is happening in the project</dd>
-	</dl>
+            <p>This is a wall where everything appears if it was added. The visibility for particular users is the same as decided during creating the item by creator. Each category has its color and each "Activity" has its own sign. Admins can also change the project-status there. Such 'general' look helps to see quickly what was done recently</p>
+          </div>
 
-	<h3>Message</h3>
-	<p>Messages can be created with chosen recivers. They can be commented and some basic categories can be added(Each category has its own color). The time of sending the messagee will be also visibl. Some files can be also uploaded with message</p>
+        
+         <div class="funcs">
+            <div class="page-header" id="messages">
+              <h1 > Messages</h1>
+            </div>
 
-	<h3>To-dos</h3>
-	<p>Topics with title and description where new items with check-boxes are added. The creator can decide who can see and edit topics or/and items created. Topics, items, descriptions can be deleted and comments can be added.</p>
+            <p>Messages can be created with chosen recivers. They can be commented and some basic categories can be added(Each category has its own color). The time of sending the messagee will be also visible. Some files can be also uploaded with message. Be in contact with associates.</p>
+        </div>
 
-	<h3>Files</h3>
-	<p>Files can be upploaded with some comments, asigned categories and users' visibility.</p>
+        <div class="funcs">
+            <div class="page-header" id="to-dos">
+              <h1>  To-dos </h1>
+            </div>
 
-	<h3>Search</h3>
-	<p>Enables search for of projects by name and status as well as messages by title and category.</p>
+            <p>Topics with title and description, where new items with check-boxes are added. The creator can decide who can see and edit topics or/and items created. Topics, items, descriptions can be deleted and comments can be added. Quick look and you know, what has to be done soon and what has left</p>
+        </div>
 
-	<h3>Projects</h3>
-	<p>Shows all projects in a list and there is an ability to search projects by name</p>
 
-	<h3>Writeboards</h3></td>
-	<p>This is a concept of a white board where everyone can add and remove something previously written. The visibility also can be managed as well as comments. New page has title and the body.</p>
-	</div>
-</body>
+        <div class="funcs">
+            <div class="page-header" id="writeboard">
+              <h1 > Writeboards</h1>
+            </div>
+
+            <p>This is a concept of a white board where everyone can add and remove something previously written. The visibility also can be managed as well as comments. New page has title and the body. Useful during brainstorms via internet, everyone can participate.</p>
+        </div>
+
+        <div class="funcs">
+            <div class="page-header" id="projects">
+              <h1 > Projects</h1>
+            </div>
+
+            <p>Shows all projects in a list. There is an ability to search for projects by name if you need something, which was done in the past</p>
+        </div>
+        
+        <div class="funcs">
+            <div class="page-header" id="users">
+              <h1 > Users</h1>
+            </div>
+
+            <div class="user-list">
+             
+              <dl class="users-list-points">
+                  <dt>Admin</dt>
+                    <dd>can add/remove users and whole content</dd>
+
+                  <dt>Programmer</dt>
+                    <dd>can add new content</dd>
+
+                  <dt>Guest</dt>
+                    <dd>if accepted by user, can watch what is happening in the project</dd>
+              </dl>
+        </div>
+
+        <div class="funcs">
+            <div class="page-header" id="files">
+              <h1 > Files</h1>
+            </div>
+
+            <p>Files can be upploaded with some comments, asigned categories and users' visibility.</p>
+          </div>
+
+        <div class="funcs">
+            <div class="page-header" id="search">
+              <h1 > Search</h1>
+            </div>
+
+            <p>Enables search for of projects by name and status as well as messages by title and category.
+            </p>
+        </div>
+        
+        <div class="funcs">
+            <div class="page-header" id="author">
+              <h1 > Search</h1>
+            </div>
+
+            <p>Hi, I am Tobiasz Kukawka, 3rd year student of Econometrics and Information Technologies and I have created this site in order to practice my skills in IT. This project was created during my internship and I am going to use it also for my Bachelor's final work.
+            </p>
+        </div>
+
+         </div>  
+        </div>
+     </div>
+
+    
+    </div>
+
+    
+    
+
+    </div> <!-- /.container -->
+
+    <footer class="footer" role="general-info">
+      <div class="container">
+        
+          <ul class="web-info inline">
+            <li>
+              <p class="git">Visit us on <a href="https://github.com/TobiaszK" target="blank">GitHub</a></p>
+            </li>
+
+            <li class="mail">
+              <p class="">Contact us by <a href="mailto:tobiasz.kukawka@ymail.com">e-mail</a> !</p>
+            </li>
+
+            <li class="rights">
+              <p class="copyrights">© 2013 Tobiasz Kukawka BookCorp</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      
+
+
+
+     </footer> 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../bootstrap/docs-assets/js/jquery.js"></script>
+    <script src="../../bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
